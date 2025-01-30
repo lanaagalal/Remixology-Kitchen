@@ -1,0 +1,45 @@
+/* Error Message Styling */
+.error-msg {
+    color: #ff0000; /* Red color for errors */
+    background-color: #ffecec; /* Light red background */
+    border: 1px solid #d60000; /* Darker red border */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    margin-top: 40%;
+    position: absolute; /* Position can be adjusted to absolute if needed */
+    top: 10%; /* Adjust this value based on your layout */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the message */
+    width: 20%; /* Or adjust as needed */
+    box-sizing: border-box; /* Includes padding and border in width */
+    z-index: 1000; /* Ensures it's on top of other content */
+    text-align: center;
+    display: inline-block;
+}
+
+/* Sign up form container adjustments */
+.form-container {
+    position: relative; /* Relative positioning to place the error message absolutely within it */
+    padding-top: 60px; /* Adjust padding to make space for the error message */
+}
+
+
+.success-msg {
+    color: #008000; /* Green color for success */
+    background-color: #ecffec; /* Light green background */
+    border: 1px solid #006400; /* Dark green border */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    margin-top: 40%;
+    position: absolute; /* Position can be adjusted to absolute if needed */
+    top: 10%; /* Adjust this value based on your layout */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the message */
+    width: 20%; /* Or adjust as needed */
+    box-sizing: border-box; /* Includes padding and border in width */
+    z-index: 1000; /* Ensures it's on top of other content */
+    text-align: center;
+    display: inline-block;
+}

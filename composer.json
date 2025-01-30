@@ -1,0 +1,8 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "google/apiclient": "2.15.0"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #f4e6d2;
+  padding: 0 10px;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #be872c;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper form{
+  width: 100%;
+}
+
+.wrapper form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper form .inputfield label{
+   width: 200px;
+   color: #be872c;
+   margin-right: 10px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.wrapper form .inputfield .input,
+.wrapper form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.terms {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column; 
+}
+.checkbox-label{
+  display: inline-block;
+}
+
+.wrapper form .inputfield .checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust spacing between checkboxes */
+}
+
+.wrapper form .inputfield .checkbox-label {
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrapper form .inputfield .checkbox-label input[type="checkbox"] {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.wrapper form .inputfield .checkbox-label .checkmark {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #be872c;
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.wrapper form .inputfield .checkbox-label input[type="checkbox"]:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #be872c;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.wrapper form .inputfield .checkbox-label:hover .checkmark {
+  background-color: #f0f0f0;
+}
+
+.wrapper form .inputfield .checkbox-label:hover input[type="checkbox"] ~ .checkmark {
+  background-color: #f0f0f0;
+}
+
+
+.wrapper form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px;  
+  border: 0px;
+  background:  #be872c;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #be872c;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
